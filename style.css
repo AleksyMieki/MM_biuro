@@ -1,0 +1,563 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-latin-ext-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-latin-ext-500-normal.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-latin-500-normal.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-latin-ext-600-normal.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-latin-600-normal.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-latin-ext-700-normal.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-latin-700-normal.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope-latin-ext-600-normal.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope-latin-600-normal.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope-latin-ext-700-normal.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope-latin-700-normal.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: clamp(32px, 5vw, 48px);
+  line-height: 1.1;
+  max-width: 620px;
+  margin-top: 60px;
+  margin-bottom: 19px;
+  color: #FFF;
+}
+
+h2 {
+  color: #000;
+  font-family: "Manrope";
+  font-size: clamp(26px, 3.4vw, 36px);
+  font-weight: 700;
+  line-height: normal;
+}
+
+h3 {
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  max-width: 560px;
+  color: #FFF;
+}
+
+h4 {
+  color: #000;
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  padding: 12px 0 0 31px;
+  margin: 0 0 9px;
+}
+
+h5 {
+  color: #000;
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.dobraK {
+  color: #000;
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.5;
+  max-width: 760px;
+}
+
+.wyp {
+  color: #000;
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 0 10px 31px;
+  margin: 0 0 9px;
+}
+
+ul, ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ---------- Layout shell ---------- */
+.shell {
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: clamp(20px, 19vw, 276px);
+  box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+  .shell { padding-inline: 80px; }
+}
+
+@media (max-width: 760px) {
+  .shell { padding-inline: 20px; }
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  display: flex;
+  margin-top: 63px;
+  color: #FFF;
+}
+
+nav {
+  display: flex;
+  gap: 52px;
+  flex-wrap: wrap;
+}
+
+.navText {
+  color: #FFF;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.navText a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ---------- Hero ---------- */
+.heroImage {
+  width: 100%;
+  background-image: url(pobrane.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  max-height: fit-content;
+}
+
+.hero {
+  display: flex;
+  flex-wrap:nowrap;
+  gap: 32px;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+}
+
+.napiszButton {
+  margin-top: 55px;
+  margin-bottom: 95px;
+  width: 195px;
+  height: 38px;
+  border-radius: 58px;
+  background: #FFF;
+  border: none;
+  cursor: pointer;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.logoImage {
+  width: clamp(140px, 20vw, 292px);
+  height: auto;
+  aspect-ratio: 292 / 291;
+  margin-top: 60px;
+}
+
+/* ---------- O nas ---------- */
+.mainBG {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(mainBG.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.listFirma {
+  border-radius: 41px;
+  background: rgba(217, 217, 217, 0.20);
+  margin-bottom: 29px;
+}
+
+/* ---------- Usługi ---------- */
+.uslugiGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;  /* exactly 2 columns */
+  gap: 24px;
+  margin-top: 24px;
+  max-width: 760px;
+}
+
+@media (max-width: 560px) {
+  .uslugiGrid {
+    grid-template-columns: 1fr;  /* stack on mobile */
+  }
+}
+
+.uBox {
+  background-color: #072971;
+  min-height: 191px;
+  border-radius: 19px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  text-align: center;
+  color: #FFF;
+  font-family: "Inter";
+}
+.uBox2 {
+  background-color: #0057DB;
+  min-height: 191px;
+  border-radius: 19px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  text-align: center;
+  color: #FFF;
+  font-family: "Inter";
+}
+.uBox span {
+  font-weight: 700;
+  font-size: 22px;
+  opacity: 0.85;
+}
+.uBox2 span {
+  font-weight: 700;
+  font-size: 22px;
+  opacity: 0.85;
+}
+
+.uBox p {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.3;
+}
+.uBox2 p {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.3;
+}
+/* ---------- Obszar działania ---------- */
+.obszarD {
+  width: fit-content;
+  max-width: 809px;
+  min-height: 82px;
+  border-radius: 43px;
+  background: rgba(14, 23, 212, 0.20);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: clamp(20px, 4vw, 48px);
+  color: #000;
+  text-align: center;
+  font-family: "Inter";
+  font-size: clamp(16px, 2vw, 24px);
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* ---------- Jak wygląda współpraca ---------- */
+.WSPBG {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(pobrane.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.heading2 {
+  color: #FFF;
+  font-family: "Manrope";
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 700;
+  line-height: normal;
+}
+
+.wspList {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin: 40px 0 64px;
+}
+
+.wspItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.wspNum {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #6669F4;
+  color: #FFF;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wspTitle {
+  color: #FFF;
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0 0 8px;
+}
+
+.wspOpis {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ---------- Opinie ---------- */
+
+.opinieRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+  margin: 40px auto 64px;
+}
+
+.arrowBtn {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.opinieCard {
+  flex: 0 1 620px;
+  width: 620px;
+  max-width: 620px;
+  background: rgba(217, 217, 217, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.opinieTrack {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.opinieSlide {
+  flex: 0 0 100%;
+  padding: 32px clamp(20px, 5vw, 56px);
+  text-align: center;
+}
+
+.opinieTekst {
+  color: #FFF;
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 0 16px;
+}
+
+.opinieAutor {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Inter";
+  font-size: 16px;
+  margin: 0;
+}
+
+
+/* ---------- Kontakt / Footer ---------- */
+.kontaktCard {
+  width: 100%;
+  max-width: 780px;
+  margin: 0 auto;
+  background: rgba(217, 217, 217, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 24px;
+  padding: clamp(20px, 4vw, 32px);
+}
+
+.kontaktNazwa {
+  color: #FFF;
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin: 0 0 24px;
+}
+
+.kontaktGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 32px;
+}
+
+.kontaktLinia {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #FFF;
+  font-family: "Inter";
+  font-size: 15px;
+  margin: 0;
+  text-decoration: none;
+}
+
+.kontaktLinia svg {
+  flex-shrink: 0;
+}
+
+a.kontaktLinia:hover {
+  opacity: 0.8;
+}
+
+
+/* ---------- Responsive ---------- */
+@media (max-width: 700px) {
+  .opinieRow {
+    gap: 12px;
+  }
+
+  .opinieCard {
+    width: auto;
+    max-width: 620px;
+  }
+
+  .arrowBtn {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 560px) {
+  .kontaktGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .wspItem {
+    gap: 16px;
+  }
+
+  .wspNum {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+}
+```
